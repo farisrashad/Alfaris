@@ -1,12 +1,191 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="ar" dir="rtl">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="refresh" content="0; url=https://wa.me/201023010934">
-  <title>جاري التحويل...</title>
+  <title>مصنع الفارس للمراتب</title>
+  <!-- خط تجوال العربي -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@500;700;900&display=swap" rel="stylesheet">
+  <!-- مكتبة الأيقونات -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Tajawal', sans-serif;
+    }
+    body {
+      background: linear-gradient(135deg, #0d1b2a, #1b263b);
+      color: #ffffff;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 30px 16px;
+    }
+    .profile-card {
+      text-align: center;
+      margin-bottom: 25px;
+    }
+    .avatar {
+      width: 90px;
+      height: 90px;
+      background: #415a77;
+      border: 3px solid #00b4d8;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 12px;
+      font-size: 36px;
+      color: #ffffff;
+      box-shadow: 0 4px 15px rgba(0, 180, 216, 0.3);
+    }
+    .factory-name {
+      font-size: 22px;
+      font-weight: 900;
+      color: #e0e1dd;
+      margin-bottom: 5px;
+    }
+    .tagline {
+      font-size: 14px;
+      color: #778da9;
+    }
+    .links-container {
+      width: 100%;
+      max-width: 420px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .link-btn {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 14px 20px;
+      border-radius: 14px;
+      text-decoration: none;
+      color: #ffffff;
+      font-weight: 700;
+      font-size: 16px;
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      transition: all 0.25s ease;
+      backdrop-filter: blur(8px);
+    }
+    .link-btn:active, .link-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 16px rgba(0,0,0,0.3);
+    }
+    .link-btn .btn-content {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+    .link-btn i.fa-brands, .link-btn i.fa-solid {
+      font-size: 22px;
+      width: 28px;
+      text-align: center;
+    }
+    .arrow-icon {
+      font-size: 14px;
+      color: #778da9;
+    }
+
+    /* ألوان وهوية الأزرار */
+    .btn-whatsapp { border-right: 5px solid #25D366; }
+    .btn-whatsapp i.fa-brands { color: #25D366; }
+
+    .btn-call { border-right: 5px solid #00b4d8; }
+    .btn-call i.fa-solid { color: #00b4d8; }
+
+    .btn-facebook { border-right: 5px solid #1877F2; }
+    .btn-facebook i.fa-brands { color: #1877F2; }
+
+    .btn-tiktok { border-right: 5px solid #ff0050; }
+    .btn-tiktok i.fa-brands { color: #ff0050; }
+
+    .btn-location { border-right: 5px solid #EA4335; }
+    .btn-location i.fa-solid { color: #EA4335; }
+
+    .footer {
+      margin-top: auto;
+      padding-top: 30px;
+      font-size: 12px;
+      color: #778da9;
+      text-align: center;
+    }
+  </style>
 </head>
 <body>
-  <script>location.replace("https://wa.me/201023010934");</script>
+
+  <!-- رأس الصفحة والتعريف -->
+  <div class="profile-card">
+    <div class="avatar">
+      <i class="fa-solid fa-industry"></i>
+    </div>
+    <h1 class="factory-name">مصنع الفارس للمراتب</h1>
+    <p class="tagline">جودة التصنيع والراحة الفندقية</p>
+  </div>
+
+  <!-- قائمة الروابط -->
+  <div class="links-container">
+
+    <!-- 1. واتساب -->
+    <a href="https://wa.me/201000000000" class="link-btn btn-whatsapp" target="_blank">
+      <div class="btn-content">
+        <i class="fa-brands fa-whatsapp"></i>
+        <span>تواصل عبر واتساب</span>
+      </div>
+      <i class="fa-solid fa-chevron-left arrow-icon"></i>
+    </a>
+
+    <!-- 2. اتصال هاتفي مباشر -->
+    <a href="tel:01000000000" class="link-btn btn-call">
+      <div class="btn-content">
+        <i class="fa-solid fa-phone"></i>
+        <span>اتصال هاتفي مباشر</span>
+      </div>
+      <i class="fa-solid fa-chevron-left arrow-icon"></i>
+    </a>
+
+    <!-- 3. فيسبوك -->
+    <a href="https://facebook.com" class="link-btn btn-facebook" target="_blank">
+      <div class="btn-content">
+        <i class="fa-brands fa-facebook-f"></i>
+        <span>صفحتنا على فيسبوك</span>
+      </div>
+      <i class="fa-solid fa-chevron-left arrow-icon"></i>
+    </a>
+
+    <!-- 4. تيك توك -->
+    <a href="https://tiktok.com" class="link-btn btn-tiktok" target="_blank">
+      <div class="btn-content">
+        <i class="fa-brands fa-tiktok"></i>
+        <span>حسابنا على تيك توك</span>
+      </div>
+      <i class="fa-solid fa-chevron-left arrow-icon"></i>
+    </a>
+
+    <!-- 5. موقع المصنع (خرائط جوجل) -->
+    <a href="https://maps.google.com" class="link-btn btn-location" target="_blank">
+      <div class="btn-content">
+        <i class="fa-solid fa-location-dot"></i>
+        <span>موقع المصنع على الخريطة</span>
+      </div>
+      <i class="fa-solid fa-chevron-left arrow-icon"></i>
+    </a>
+
+  </div>
+
+  <div class="footer">
+    © مصنع الفارس للمراتب — جميع الحقوق محفوظة
+  </div>
+
 </body>
 </html>
+
