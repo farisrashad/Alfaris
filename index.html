@@ -1,224 +1,251 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>مصنع الفارس للمراتب</title>
-  <!-- خط تجوال العربي -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@500;700;900&display=swap" rel="stylesheet">
-  <!-- مكتبة الأيقونات Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-      font-family: 'Tajawal', sans-serif;
-    }
-    body {
-      background: linear-gradient(135deg, #0d1b2a, #1b263b);
-      color: #ffffff;
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 30px 16px;
-    }
-    .profile-card {
-      text-align: center;
-      margin-bottom: 24px;
-    }
-    .avatar {
-      width: 90px;
-      height: 90px;
-      background: #415a77;
-      border: 3px solid #00b4d8;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin: 0 auto 12px;
-      font-size: 36px;
-      color: #ffffff;
-      box-shadow: 0 4px 15px rgba(0, 180, 216, 0.3);
-    }
-    .factory-name {
-      font-size: 22px;
-      font-weight: 900;
-      color: #e0e1dd;
-      margin-bottom: 5px;
-    }
-    .tagline {
-      font-size: 14px;
-      color: #778da9;
-    }
-    .links-container {
-      width: 100%;
-      max-width: 420px;
-      display: flex;
-      flex-direction: column;
-      gap: 12px;
-    }
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>مصنع الفارس للمراتب</title>
+<meta name="description" content="مصنع الفارس للمراتب — تواصل معنا على واتساب أو اتصل بنا أو شوف الكتالوج.">
+<meta name="theme-color" content="#060b16">
+<meta property="og:title" content="مصنع الفارس للمراتب">
+<meta property="og:description" content="واتساب · اتصال · كتالوج · العنوان">
+<meta property="og:image" content="logo.png">
+<link rel="icon" href="logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600&family=Reem+Kufi:wght@500;600&display=swap" rel="stylesheet">
 
-    /* صف الأزرار المزدوجة (واتساب + اتصال) */
-    .dual-buttons {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 10px;
-    }
-    .btn-half {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 10px;
-      padding: 14px 10px;
-      border-radius: 14px;
-      text-decoration: none;
-      color: #ffffff;
-      font-weight: 700;
-      font-size: 15px;
-      background: rgba(255, 255, 255, 0.08);
-      border: 1px solid rgba(255, 255, 255, 0.12);
-      transition: all 0.25s ease;
-      backdrop-filter: blur(8px);
-    }
-    .btn-half:active, .btn-half:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 6px 16px rgba(0,0,0,0.3);
-    }
-    .btn-half.whatsapp {
-      border-bottom: 4px solid #25D366;
-    }
-    .btn-half.whatsapp i {
-      color: #25D366;
-      font-size: 22px;
-    }
-    .btn-half.call {
-      border-bottom: 4px solid #00b4d8;
-    }
-    .btn-half.call i {
-      color: #00b4d8;
-      font-size: 20px;
-    }
+<style>
+  :root{
+    --night:#060b16;
+    --ink:#0c1424;
+    --line:rgba(226,174,53,.28);
+    --gold:#e2ae35;
+    --gold-hi:#f6d27a;
+    --gold-lo:#a9791a;
+    --text:#f3ead6;
+    --muted:#a99f88;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
+  html{background:var(--night)}
+  body{
+    min-height:100vh;
+    font-family:"IBM Plex Sans Arabic",system-ui,sans-serif;
+    color:var(--text);
+    background:
+      radial-gradient(60% 40% at 50% 0%, rgba(226,174,53,.14), transparent 70%),
+      radial-gradient(50% 30% at 50% 100%, rgba(226,174,53,.07), transparent 70%),
+      var(--night);
+    padding:max(28px,env(safe-area-inset-top)) 20px max(36px,env(safe-area-inset-bottom));
+    display:flex;justify-content:center;
+  }
+  main{width:100%;max-width:460px}
 
-    /* الأزرار العريضة الكاملة */
-    .link-btn {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 14px 18px;
-      border-radius: 14px;
-      text-decoration: none;
-      color: #ffffff;
-      font-weight: 700;
-      font-size: 15px;
-      background: rgba(255, 255, 255, 0.08);
-      border: 1px solid rgba(255, 255, 255, 0.12);
-      transition: all 0.25s ease;
-      backdrop-filter: blur(8px);
-    }
-    .link-btn:active, .link-btn:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 6px 16px rgba(0,0,0,0.3);
-    }
-    .link-btn .btn-content {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-    }
-    .link-btn i.fa-brands, .link-btn i.fa-solid {
-      font-size: 22px;
-      width: 26px;
-      text-align: center;
-    }
-    .arrow-icon {
-      font-size: 14px;
-      color: #778da9;
-    }
+  /* ---------- الشعار ---------- */
+  .brand{display:flex;flex-direction:column;align-items:center;text-align:center;margin-bottom:30px}
+  .logo{
+    position:relative;width:min(78vw,300px);aspect-ratio:1;border-radius:50%;
+    overflow:hidden;
+    box-shadow:0 0 0 1px var(--line), 0 24px 70px -20px rgba(226,174,53,.35);
+    animation:rise .9s cubic-bezier(.2,.7,.2,1) both;
+  }
+  .logo img{width:100%;height:100%;display:block;object-fit:cover}
+  /* لمعة ذهب بتعدّي مرة واحدة على الشعار */
+  .logo::after{
+    content:"";position:absolute;inset:0;
+    background:linear-gradient(105deg,transparent 35%,rgba(255,236,170,.55) 50%,transparent 65%);
+    transform:translateX(120%);
+    animation:sheen 1.6s .7s ease-out 1 forwards;
+    mix-blend-mode:screen;
+  }
+  .tagline{
+    margin-top:22px;
+    font-family:"Reem Kufi",sans-serif;font-weight:500;
+    font-size:1.35rem;letter-spacing:.01em;color:var(--gold-hi);
+  }
+  .sub{margin-top:6px;color:var(--muted);font-size:.95rem}
 
-    /* هويات الأزرار الكاملة */
-    .btn-facebook { border-right: 5px solid #1877F2; }
-    .btn-facebook i.fa-brands { color: #1877F2; }
+  /* ---------- الأزرار الأساسية ---------- */
+  .primary{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:14px}
+  .btn-main{
+    display:flex;align-items:center;justify-content:center;gap:10px;
+    min-height:58px;border-radius:16px;text-decoration:none;
+    font-weight:600;font-size:1.05rem;
+    transition:transform .15s ease, box-shadow .2s ease, filter .2s;
+  }
+  .btn-main svg{width:22px;height:22px;flex:none}
+  .btn-main.fill{
+    color:#1a1204;
+    background:linear-gradient(180deg,var(--gold-hi),var(--gold) 55%,var(--gold-lo));
+    box-shadow:0 10px 30px -10px rgba(226,174,53,.6), inset 0 1px 0 rgba(255,255,255,.45);
+  }
+  .btn-main.ghost{color:var(--gold-hi);border:1px solid var(--gold);background:rgba(226,174,53,.06)}
+  .btn-main:active{transform:scale(.97)}
+  @media (hover:hover){
+    .btn-main.fill:hover{filter:brightness(1.06);box-shadow:0 14px 36px -10px rgba(226,174,53,.8), inset 0 1px 0 rgba(255,255,255,.45)}
+    .btn-main.ghost:hover{background:rgba(226,174,53,.14)}
+  }
 
-    .btn-instagram { border-right: 5px solid #E1306C; }
-    .btn-instagram i.fa-brands { color: #E1306C; }
+  /* ---------- القائمة ---------- */
+  .list{display:flex;flex-direction:column;border-top:1px solid var(--line);margin-top:22px}
+  .row{
+    display:flex;align-items:center;gap:14px;
+    padding:16px 4px;text-decoration:none;color:inherit;
+    border-bottom:1px solid var(--line);
+    transition:padding .2s ease, background .2s ease;
+  }
+  .row .ic{
+    width:44px;height:44px;flex:none;border-radius:50%;
+    display:grid;place-items:center;
+    border:1px solid var(--gold);color:var(--gold-hi);
+    transition:background .2s,color .2s;
+  }
+  .row .ic svg{width:20px;height:20px}
+  .row .tx{flex:1;min-width:0}
+  .row .tx b{display:block;font-weight:600;font-size:1.02rem}
+  .row .tx span{display:block;color:var(--muted);font-size:.88rem;margin-top:2px;overflow-wrap:anywhere}
+  .row .go{width:18px;height:18px;color:var(--gold);flex:none;opacity:.8}
+  @media (hover:hover){
+    .row:hover{background:rgba(226,174,53,.06);padding-inline:12px}
+    .row:hover .ic{background:var(--gold);color:#1a1204}
+  }
 
-    .btn-location { border-right: 5px solid #EA4335; }
-    .btn-location i.fa-solid { color: #EA4335; }
+  /* ---------- السوشيال ---------- */
+  .social{margin-top:30px;text-align:center}
+  .social h2{font-family:"Reem Kufi",sans-serif;font-weight:500;font-size:1.05rem;color:var(--muted);margin-bottom:14px}
+  .social .icons{display:flex;justify-content:center;gap:14px;flex-wrap:wrap}
+  .social a{
+    width:52px;height:52px;border-radius:50%;display:grid;place-items:center;
+    color:var(--gold-hi);border:1px solid var(--line);background:var(--ink);
+    transition:transform .15s, background .2s, color .2s, border-color .2s;
+  }
+  .social a svg{width:22px;height:22px}
+  .social a:active{transform:scale(.94)}
+  @media (hover:hover){.social a:hover{background:var(--gold);color:#1a1204;border-color:var(--gold)}}
 
-    .footer {
-      margin-top: auto;
-      padding-top: 30px;
-      font-size: 12px;
-      color: #778da9;
-      text-align: center;
-    }
-  </style>
+  footer{margin-top:34px;text-align:center;color:var(--muted);font-size:.8rem}
+
+  a:focus-visible{outline:2px solid var(--gold-hi);outline-offset:3px}
+
+  svg{fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+
+  @keyframes rise{from{opacity:0;transform:translateY(14px) scale(.97)}to{opacity:1;transform:none}}
+  @keyframes sheen{to{transform:translateX(-120%)}}
+  @media (prefers-reduced-motion:reduce){
+    .logo,.logo::after{animation:none}
+    .logo::after{display:none}
+    *{transition:none!important}
+  }
+</style>
 </head>
+
 <body>
+<main>
+  <header class="brand">
+    <div class="logo"><img src="logo.png" alt="شعار مصنع الفارس للمراتب" width="600" height="600"></div>
+    <p class="tagline">مصنع الفارس للمراتب</p>
+    <p class="sub">كلمنا مباشرة أو شوف الكتالوج</p>
+  </header>
 
-  <!-- رأس الصفحة -->
-  <div class="profile-card">
-    <div class="avatar">
-      <i class="fa-solid fa-industry"></i>
-    </div>
-    <h1 class="factory-name">مصنع الفارس للمراتب</h1>
-    <p class="tagline">جودة التصنيع والراحة الفندقية</p>
-  </div>
+  <!-- واتساب + اتصال -->
+  <div class="primary" id="primary"></div>
 
-  <!-- قائمة الأزرار -->
-  <div class="links-container">
+  <!-- باقي الروابط -->
+  <nav class="list" id="list" aria-label="روابط المصنع"></nav>
 
-    <!-- 1. شريط مدمج: زر واتساب + زر اتصال مباشر جنب بعض -->
-    <div class="dual-buttons">
-      <!-- زر الواتساب -->
-      <a href="https://wa.me/201023010934" class="btn-half whatsapp" target="_blank">
-        <i class="fa-brands fa-whatsapp"></i>
-        <span>واتساب</span>
-      </a>
+  <!-- سوشيال -->
+  <section class="social" id="social" hidden>
+    <h2>تابعنا</h2>
+    <div class="icons" id="icons"></div>
+  </section>
 
-      <!-- زر الاتصال المباشر (يفتح لوحة الاتصال برقم المصنع) -->
-      <a href="tel:01023010934" class="btn-half call">
-        <i class="fa-solid fa-phone"></i>
-        <span>اتصال هاتفي</span>
-      </a>
-    </div>
+  <footer>© مصنع الفارس للمراتب</footer>
+</main>
 
-    <!-- 2. صفحة فيسبوك -->
-    <a href="https://www.facebook.com/share/14tobeDaMKo/" class="link-btn btn-facebook" target="_blank">
-      <div class="btn-content">
-        <i class="fa-brands fa-facebook-f"></i>
-        <span>صفحتنا على فيسبوك</span>
-      </div>
-      <i class="fa-solid fa-chevron-left arrow-icon"></i>
-    </a>
+<script>
+/* =====================================================
+   ✏️ عدّل البيانات هنا بس — وسيب الباقي زي ما هو
+   أي حقل تسيبه فاضي ("") الزرار بتاعه بيختفي لوحده
+   ===================================================== */
+const SITE = {
+  // الرقم بصيغة دولية من غير + ولا مسافات (مصر = 20 وبعدها الرقم من غير الصفر)
+  whatsapp: "201023010934",
+  whatsappMessage: "أهلاً، عايز أستفسر عن المراتب",
+  phone:    "+201023010934",         // رقم المكالمة
+  phoneLabel: "0102 301 0934",       // الشكل اللي يظهر للناس
 
-    <!-- 3. حساب إنستغرام -->
-    <a href="https://www.instagram.com/al_faris_216?srtk=MTYzdXA0dnMwZ2hsaA==" class="link-btn btn-instagram" target="_blank">
-      <div class="btn-content">
-        <i class="fa-brands fa-instagram"></i>
-        <span>تابعنا على إنستغرام</span>
-      </div>
-      <i class="fa-solid fa-chevron-left arrow-icon"></i>
-    </a>
+  telegram: "",                      // اسم المستخدم من غير @  مثال: alfares_mattress
 
-    <!-- 4. موقع المصنع (خرائط جوجل) -->
-    <a href="https://maps.app.goo.gl/iRzP2VJxwceXJ5P1A" class="link-btn btn-location" target="_blank">
-      <div class="btn-content">
-        <i class="fa-solid fa-location-dot"></i>
-        <span>موقع المصنع على الخريطة</span>
-      </div>
-      <i class="fa-solid fa-chevron-left arrow-icon"></i>
-    </a>
+  catalog:  "",           // اسم ملف الكتالوج في الريبو، أو لينك خارجي
 
-  </div>
+  address:  "موقع المصنع على الخريطة",
+  mapUrl:   "https://maps.app.goo.gl/iRzP2VJxwceXJ5P1A",                      // لينك جوجل ماب (اختياري). لو فاضي بيبحث بالعنوان
 
-  <div class="footer">
-    © مصنع الفارس للمراتب — جميع الحقوق محفوظة
-  </div>
+  facebook:  "https://www.facebook.com/share/14tobeDaMKo/",                     // لينك الصفحة كامل
+  instagram: "https://www.instagram.com/al_faris_216",
+  tiktok:    "",
+  youtube:   ""
+};
 
+/* ---------- الأيقونات ---------- */
+const I = {
+  wa:  '<path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/><path d="M9.2 8.5c-.4.4-.4 1.200 0 2 .8 1.700 2.200 3 3.900 3.800.8.4 1.600.3 2-.1l.4-.7-1.800-1-.7.6c-.9-.4-1.700-1.200-2.200-2.100l.6-.7-.9-1.800z"/>',
+  tel: '<path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>',
+  book:'<path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>',
+  tg:  '<path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/>',
+  pin: '<path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/>',
+  fb:  '<path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>',
+  ig:  '<rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/>',
+  tt:  '<path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/>',
+  yt:  '<path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"/><path d="m10 15 5-3-5-3z"/>',
+  go:  '<path d="m15 18-6-6 6-6"/>'
+};
+const svg = (p) => `<svg viewBox="0 0 24 24" aria-hidden="true">${p}</svg>`;
+const ext = 'target="_blank" rel="noopener"';
+
+/* ---------- الأزرار الأساسية ---------- */
+const primary = [];
+if (SITE.whatsapp) {
+  const href = `https://wa.me/${SITE.whatsapp}?text=${encodeURIComponent(SITE.whatsappMessage || "")}`;
+  primary.push(`<a class="btn-main fill" href="${href}" ${ext}>${svg(I.wa)}واتساب</a>`);
+}
+if (SITE.phone) {
+  primary.push(`<a class="btn-main ghost" href="tel:${SITE.phone}">${svg(I.tel)}اتصل بنا</a>`);
+}
+const pEl = document.getElementById("primary");
+pEl.innerHTML = primary.join("");
+if (primary.length === 1) pEl.style.gridTemplateColumns = "1fr";
+if (!primary.length) pEl.remove();
+
+/* ---------- القائمة ---------- */
+const rows = [];
+const row = (icon, title, sub, href, newTab = true) =>
+  `<a class="row" href="${href}" ${newTab ? ext : ""}>
+     <span class="ic">${svg(icon)}</span>
+     <span class="tx"><b>${title}</b><span>${sub}</span></span>
+     <span class="go">${svg(I.go)}</span>
+   </a>`;
+
+if (SITE.catalog)  rows.push(row(I.book, "الكتالوج", "شوف الموديلات والمقاسات", SITE.catalog));
+if (SITE.telegram) rows.push(row(I.tg, "تليجرام", "@" + SITE.telegram, `https://t.me/${SITE.telegram}`));
+if (SITE.phoneLabel && SITE.phone) rows.push(row(I.tel, "رقم المصنع", `<bdi dir="ltr">${SITE.phoneLabel}</bdi>`, `tel:${SITE.phone}`, false));
+if (SITE.address) {
+  const map = SITE.mapUrl || `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(SITE.address)}`;
+  rows.push(row(I.pin, "العنوان", SITE.address, map));
+}
+const list = document.getElementById("list");
+list.innerHTML = rows.join("");
+if (!rows.length) list.remove();
+
+/* ---------- السوشيال ---------- */
+const soc = [
+  ["facebook","فيسبوك",I.fb],["instagram","انستجرام",I.ig],
+  ["tiktok","تيك توك",I.tt],["youtube","يوتيوب",I.yt]
+].filter(([k]) => SITE[k]);
+if (soc.length) {
+  document.getElementById("icons").innerHTML =
+    soc.map(([k,n,ic]) => `<a href="${SITE[k]}" ${ext} aria-label="${n}" title="${n}">${svg(ic)}</a>`).join("");
+  document.getElementById("social").hidden = false;
+}
+</script>
 </body>
 </html>
