@@ -4,67 +4,175 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>كتالوج مصنع الفارس للمراتب</title>
-<meta name="description" content="كتالوج مصنع الفارس للمراتب والإسفنج — اختار المنتج واكتب مقاسك بسهولة.">
+<meta name="description" content="كتالوج مصنع الفارس للمراتب والإسفنج — مراتب طبي وسوست وسوفت ومخدات وكثرات.">
 <meta name="theme-color" content="#0a2166">
 <link rel="icon" href="../logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Reem+Kufi:wght@500;600&display=swap" rel="stylesheet">
 <style>
-:root{--navy:#071b59;--blue:#12378c;--cyan:#35d9f7;--green:#25d366;--paper:#f6f8ff;--glass:rgba(255,255,255,.1);--line:rgba(255,255,255,.22);--muted:rgba(255,255,255,.72);--ink:#10234e;--ink-muted:#64708b}
-*{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}html{background:var(--navy)}body{min-height:100vh;font-family:"IBM Plex Sans Arabic",system-ui,sans-serif;color:#fff;background:radial-gradient(85% 45% at 50% 0,#1845a5,var(--navy) 62%,#020a2a 100%);padding:max(14px,env(safe-area-inset-top)) clamp(14px,4vw,32px) max(24px,env(safe-area-inset-bottom))}main{width:100%;max-width:1180px;margin:auto}.topbar{display:flex;align-items:center;gap:14px;margin-bottom:24px}.brand{display:flex;align-items:center;gap:9px}.brand img{width:43px;height:58px;object-fit:contain}.brand b{display:block;font-family:"Reem Kufi";font-size:1rem;font-weight:500}.brand small{color:var(--muted);font-size:.7rem}.back{margin-inline-start:auto;display:flex;align-items:center;gap:5px;color:#fff;text-decoration:none;font-size:.84rem;background:var(--glass);border:1px solid var(--line);padding:8px 12px;border-radius:11px}.back svg{width:14px;height:14px;fill:none;stroke:currentColor;stroke-width:2}.hero{padding:26px 0 28px;display:flex;align-items:end;justify-content:space-between;gap:20px;border-bottom:1px solid var(--line)}.hero h1{font-family:"Reem Kufi";font-weight:500;font-size:clamp(1.9rem,5vw,3.1rem);line-height:1.35}.hero h1 span{color:var(--cyan)}.hero p{max-width:440px;color:var(--muted);line-height:1.85;font-size:.92rem}.toolbar{padding:20px 0 12px;display:flex;gap:10px;align-items:center}.search{flex:1;min-width:170px;padding:12px 15px;border-radius:12px;border:1px solid var(--line);background:var(--glass);color:#fff;font:inherit;font-size:.9rem;outline:none}.search::placeholder{color:var(--muted)}.search:focus{border-color:var(--cyan)}.tabs{display:flex;gap:8px;overflow:auto;padding:0 0 15px;scrollbar-width:none}.tabs::-webkit-scrollbar{display:none}.tab{flex:none;padding:8px 15px;border-radius:999px;border:1px solid var(--line);background:var(--glass);color:#fff;font:inherit;font-size:.83rem;font-weight:600;cursor:pointer}.tab[aria-pressed="true"]{background:#fff;color:var(--navy);border-color:#fff}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.card{display:flex;flex-direction:column;overflow:hidden;background:rgba(255,255,255,.08);border:1px solid var(--line);border-radius:17px;min-width:0}.pic{aspect-ratio:4/3;position:relative;background:linear-gradient(145deg,rgba(255,255,255,.13),rgba(3,11,47,.65));display:grid;place-items:center;overflow:hidden}.pic img.photo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}.pic img.ph{width:28%;opacity:.45}.image-note{position:absolute;inset:auto 10px 10px auto;background:rgba(3,11,47,.75);border:1px solid rgba(255,255,255,.25);border-radius:8px;color:#fff;padding:4px 8px;font-size:.66rem}.body{display:flex;flex-direction:column;gap:7px;padding:13px 13px 14px;flex:1}.cat{color:var(--cyan);font-size:.72rem;font-weight:600}.name{font-size:1rem;line-height:1.4}.meta,.desc{font-size:.79rem;color:var(--muted)}.desc{line-height:1.55;min-height:38px}.details{margin-top:auto;border:0;border-radius:11px;padding:10px;background:#fff;color:var(--navy);font:inherit;font-size:.84rem;font-weight:700;cursor:pointer}.details span{margin-inline-start:5px}.empty{grid-column:1/-1;text-align:center;color:var(--muted);padding:45px 0}.footer{margin-top:28px;text-align:center;color:var(--muted);font-size:.74rem}.modal-backdrop{position:fixed;inset:0;background:rgba(1,8,32,.78);backdrop-filter:blur(8px);display:grid;place-items:center;padding:16px;z-index:5;opacity:0;pointer-events:none;transition:opacity .2s}.modal-backdrop.open{opacity:1;pointer-events:auto}.modal{width:min(620px,100%);max-height:92vh;overflow:auto;background:var(--paper);color:var(--ink);border-radius:22px;box-shadow:0 25px 80px rgba(0,0,0,.4);position:relative;transform:translateY(14px);transition:transform .25s}.modal-backdrop.open .modal{transform:none}.modal-head{padding:23px 24px 18px;border-bottom:1px solid #dfe4f1}.modal-head .kicker{color:#1a6e9a;font-size:.75rem;font-weight:700}.modal-head h2{font-family:"Reem Kufi";font-size:1.65rem;font-weight:500;margin-top:5px}.modal-head p{color:var(--ink-muted);font-size:.83rem;line-height:1.8;margin-top:3px}.close{position:absolute;left:16px;top:16px;border:0;border-radius:50%;width:32px;height:32px;background:#e7ebf5;color:var(--ink);font-size:1.4rem;line-height:1;cursor:pointer}.modal-body{padding:21px 24px 24px}.quick-title{font-size:.85rem;font-weight:700;margin-bottom:10px}.presets{display:flex;gap:7px;flex-wrap:wrap;margin-bottom:20px}.preset{border:1px solid #cbd4e5;background:#fff;border-radius:9px;color:var(--ink);padding:7px 10px;font:inherit;font-size:.78rem;cursor:pointer}.preset.active,.preset:hover{border-color:#1689ae;background:#eafaff;color:#0d6484}.custom-title{display:flex;justify-content:space-between;align-items:center;font-size:.85rem;font-weight:700;margin-bottom:10px}.unit{font-size:.7rem;font-weight:400;color:var(--ink-muted)}.dimensions{display:grid;grid-template-columns:repeat(3,1fr);gap:9px;direction:ltr}.dimension label{display:block;direction:rtl;color:var(--ink-muted);font-size:.72rem;margin-bottom:5px}.dimension input{width:100%;padding:11px 8px;border:1px solid #cbd4e5;border-radius:10px;background:#fff;color:var(--ink);font:inherit;font-size:.95rem;text-align:center;outline:none}.dimension input:focus{border-color:#198bb0;box-shadow:0 0 0 3px rgba(25,139,176,.12)}.hint{font-size:.72rem;color:var(--ink-muted);margin-top:10px}.order-final{display:flex;align-items:center;justify-content:center;gap:8px;margin-top:21px;width:100%;border:0;border-radius:12px;padding:13px;background:linear-gradient(180deg,#43e97b,var(--green));color:#04230f;font:inherit;font-weight:700;cursor:pointer}.order-final svg{width:19px;height:19px}.order-final:disabled{opacity:.55;cursor:not-allowed}.validation{min-height:20px;color:#bb3e3e;font-size:.73rem;margin-top:8px}.notice{background:#eef9ff;color:#17607f;border:1px solid #ccecf7;border-radius:10px;padding:10px;font-size:.76rem;line-height:1.7;margin-top:15px}
-@media(min-width:700px){.grid{grid-template-columns:repeat(3,1fr);gap:15px}.topbar{margin-bottom:34px}.toolbar{padding-top:25px}.hero p{font-size:1rem}}
-@media(min-width:1020px){.grid{grid-template-columns:repeat(4,1fr)}.hero{padding-top:35px;padding-bottom:35px}.card:hover{transform:translateY(-3px);transition:transform .2s}}
-@media(max-width:620px){.hero{display:block}.hero p{margin-top:12px}.toolbar{display:block}.search{display:block;width:100%;margin-bottom:11px}.topbar{margin-bottom:13px}.brand img{width:35px;height:48px}.brand b{font-size:.9rem}.back{font-size:.75rem}.modal-head,.modal-body{padding-inline:18px}}
-@media(max-width:380px){.grid{gap:8px}.body{padding-inline:10px}.name{font-size:.9rem}.desc{font-size:.73rem}.dimensions{gap:6px}}
+  :root{
+    --blue-1:#112f86; --blue-2:#0a2166; --blue-3:#06174d; --blue-4:#030b2f;
+    --cyan:#2fd6f7; --glass:rgba(255,255,255,.09); --glass-line:rgba(255,255,255,.22);
+    --text:#fff; --muted:rgba(255,255,255,.74);
+  }
+  *{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
+  html{background:var(--blue-4)}
+  body{
+    min-height:100vh;font-family:"IBM Plex Sans Arabic",system-ui,sans-serif;color:var(--text);
+    background:radial-gradient(90% 55% at 50% 10%, var(--blue-1), var(--blue-2) 55%, var(--blue-3) 85%, var(--blue-4));
+    background-attachment:fixed;
+    padding:max(12px,env(safe-area-inset-top)) clamp(12px,3vw,28px) max(24px,env(safe-area-inset-bottom));
+  }
+  main{width:100%;max-width:1100px;margin-inline:auto}
+
+  /* ---------- الهيدر ---------- */
+  header{display:flex;align-items:center;gap:12px;margin-bottom:12px}
+  header .back{
+    flex:none;display:flex;align-items:center;gap:4px;padding:8px 12px;border-radius:12px;
+    background:var(--glass);border:1px solid var(--glass-line);color:#fff;text-decoration:none;font-size:.85rem;font-weight:600;
+  }
+  header .back svg{width:14px;height:14px;fill:none;stroke:currentColor;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
+  header h1{flex:1;text-align:center;font-family:"Reem Kufi",sans-serif;font-weight:500;font-size:1.2rem}
+  header img{width:44px;height:auto;flex:none}
+
+  /* ---------- بحث + أقسام ---------- */
+  .search{
+    width:100%;padding:11px 14px;border-radius:12px;border:1px solid var(--glass-line);
+    background:var(--glass);color:#fff;font:inherit;font-size:.95rem;outline:none;
+  }
+  .search::placeholder{color:var(--muted)}
+  .search:focus{border-color:var(--cyan)}
+  .tabs{display:flex;gap:8px;overflow-x:auto;padding:10px 0 12px;scrollbar-width:none}
+  .tabs::-webkit-scrollbar{display:none}
+  .tab{
+    flex:none;padding:7px 14px;border-radius:999px;border:1px solid var(--glass-line);
+    background:var(--glass);color:#fff;font:inherit;font-size:.88rem;font-weight:600;cursor:pointer;
+    transition:background .2s,color .2s,border-color .2s;
+  }
+  .tab[aria-pressed="true"]{background:#fff;color:#08206b;border-color:#fff}
+
+  /* ---------- كروت المنتجات ---------- */
+  .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+  @media (min-width:700px){ .grid{grid-template-columns:repeat(3,1fr);gap:14px} }
+  @media (min-width:1000px){ .grid{grid-template-columns:repeat(4,1fr)} }
+
+  .card{
+    display:flex;flex-direction:column;border-radius:16px;overflow:hidden;
+    background:var(--glass);border:1px solid var(--glass-line);
+  }
+  .pic{position:relative;aspect-ratio:4/3;background:rgba(3,11,47,.5);display:grid;place-items:center}
+  .pic img.photo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+  .pic img.ph{width:32%;opacity:.35}
+  .body{display:flex;flex-direction:column;gap:6px;padding:10px 10px 12px;flex:1}
+  .cat{font-size:.72rem;color:var(--cyan);font-weight:600}
+  .name{font-size:.95rem;font-weight:700;line-height:1.35}
+  .meta{font-size:.78rem;color:var(--muted)}
+  .desc{font-size:.8rem;color:var(--muted);line-height:1.5}
+  .sizes{display:flex;flex-wrap:wrap;gap:5px}
+  .size{
+    padding:4px 8px;border-radius:8px;border:1px solid var(--glass-line);background:transparent;color:#fff;
+    font:inherit;font-size:.74rem;cursor:pointer;direction:ltr;
+  }
+  .size[aria-pressed="true"]{background:var(--cyan);border-color:var(--cyan);color:#04202a;font-weight:700}
+  .price{font-weight:700;font-size:.95rem}
+  .order{
+    margin-top:auto;display:flex;align-items:center;justify-content:center;gap:7px;
+    padding:9px 8px;border-radius:12px;text-decoration:none;font-weight:700;font-size:.85rem;color:#04230f;
+    background:linear-gradient(180deg,#43e97b,#25D366 60%,#1aa84f);
+  }
+  .order svg{width:18px;height:18px}
+  .empty{grid-column:1/-1;text-align:center;color:var(--muted);padding:40px 0}
+  @media (hover:hover){.tab:hover{background:rgba(255,255,255,.16)}.tab[aria-pressed="true"]:hover{background:#fff}.order:hover{filter:brightness(1.06)}}
+  a:focus-visible,button:focus-visible{outline:2px solid #fff;outline-offset:2px}
+  footer{margin-top:22px;text-align:center;color:var(--muted);font-size:.74rem}
 </style>
 </head>
 <body>
 <main>
-  <header class="topbar">
-    <a class="brand" href="../"><img src="../logo.png" alt="شعار مصنع الفارس"><span><b>مصنع الفارس</b><small>كتالوج المراتب والإسفنج</small></span></a>
-    <a class="back" href="../"><svg viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"/></svg>الرئيسية</a>
+  <header>
+    <a class="back" href="../">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>الرئيسية
+    </a>
+    <h1>كتالوج مصنع الفارس</h1>
+    <img src="../logo.png" alt="" width="701" height="952">
   </header>
-  <section class="hero"><div><h1>اختار المنتج،<br><span>واكتب مقاسك.</span></h1></div><p>بدل ما تدور على مقاس جاهز، اكتب الطول والعرض والارتفاع اللي يناسبك. هنجهّز لك رسالة واتساب بالمقاس المطلوب مباشرة.</p></section>
-  <div class="toolbar"><input class="search" id="q" type="search" placeholder="ابحث عن مرتبة، مخدة، أو كثرة..." aria-label="بحث عن منتج"></div>
-  <div class="tabs" id="tabs" role="group" aria-label="أقسام الكتالوج"></div>
+
+  <input class="search" id="q" type="search" placeholder="ابحث عن منتج..." aria-label="بحث">
+  <div class="tabs" id="tabs" role="group" aria-label="الأقسام"></div>
   <section class="grid" id="grid" aria-live="polite"></section>
-  <footer class="footer">© مصنع الفارس للمراتب</footer>
+
+  <footer>© مصنع الفارس للمراتب</footer>
 </main>
 
-<div class="modal-backdrop" id="backdrop" aria-hidden="true">
-  <section class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
-    <button class="close" id="close" aria-label="إغلاق">×</button>
-    <div class="modal-head"><div class="kicker" id="modalKicker">تفاصيل المنتج</div><h2 id="modalTitle">—</h2><p id="modalDesc">—</p></div>
-    <div class="modal-body">
-      <div class="quick-title">اختار مقاس جاهز <span class="unit">أو اكتب مقاسك بنفسك</span></div>
-      <div class="presets" id="presets"></div>
-      <div class="custom-title"><span>المقاس المطلوب بالسنتيمتر</span><span class="unit">الطول × العرض × الارتفاع</span></div>
-      <div class="dimensions">
-        <div class="dimension"><label for="length">الطول</label><input id="length" inputmode="decimal" type="number" min="30" max="400" placeholder="190"></div>
-        <div class="dimension"><label for="width">العرض</label><input id="width" inputmode="decimal" type="number" min="20" max="300" placeholder="160"></div>
-        <div class="dimension"><label for="height">الارتفاع</label><input id="height" inputmode="decimal" type="number" min="2" max="100" placeholder="25"></div>
-      </div>
-      <p class="hint">مثال: 190 طول × 160 عرض × 25 ارتفاع سم</p>
-      <p class="validation" id="validation" role="alert"></p>
-      <button class="order-final" id="order" type="button"><svg viewBox="0 0 24 24"><path fill="#04230f" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.298-.497.099-.198.05-.371-.025-.52s-.669-1.612-.916-2.207c-.242-.579-.487-.5-.669-.51a13 13 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074s2.096 3.2 5.077 4.487c.709.306 1.262.489 1.871.118.571-.085 1.758-.719 2.006-1.413s.248-1.289.173-1.413c-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.82 9.82 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.82 11.82 0 0 0 12.05 0C5.495. 16 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.9 11.9 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.82 11.82 0 0 0-3.48-8.413"/></svg>اطلب المقاس على واتساب</button>
-      <div class="notice">بعد الضغط، هتفتح واتساب برسالة جاهزة فيها اسم المنتج والمقاس. تقدر تعدّل الرسالة قبل الإرسال.</div>
-    </div>
-  </section>
-</div>
 <script src="products.js"></script>
 <script>
-const WA_ICON=`<svg viewBox="0 0 24 24"><path fill="#04230f" d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.16-.17.2-.35.22-.64.08-.3-.15-1.26-.46-2.39-1.48-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.61l.45-.52c.15-.17.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.61-.92-2.21-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.08-.79.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.06 2.88 1.21 3.07.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.63.71.23 1.36.2 1.87.12.57-.09 1.76-.72 2.01-1.41.25-.69.25-1.29.17-1.41-.07-.12-.27-.2-.57-.35"/></svg>`;
-const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-const catName=id=>(CATALOG.categories.find(c=>c.id===id)||{}).name||'';
-const state={cat:'all',q:'',product:null}; const grid=document.querySelector('#grid'),tabs=document.querySelector('#tabs');
-function renderTabs(){const used=CATALOG.categories.filter(c=>CATALOG.products.some(p=>p.cat===c.id));tabs.innerHTML=[{id:'all',name:'الكل'},...used].map(c=>`<button class="tab" data-cat="${esc(c.id)}" aria-pressed="${state.cat===c.id}">${esc(c.name)}</button>`).join('')}
-function renderGrid(){const q=state.q.trim().toLowerCase();const list=CATALOG.products.map((p,i)=>({p,i})).filter(({p})=>(state.cat==='all'||p.cat===state.cat)&&(!q||(p.name+' '+(p.desc||'')).toLowerCase().includes(q)));if(!list.length){grid.innerHTML='<p class="empty">مفيش منتجات مطابقة</p>';return}grid.innerHTML=list.map(({p,i})=>`<article class="card"><div class="pic">${p.image?`<img class="photo" src="${esc(p.image)}" alt="${esc(p.name)}" loading="lazy" onerror="this.remove()">`:'<img class="ph" src="../logo.png" alt="">'}<span class="image-note">الصورة النهائية هتضاف قريباً</span></div><div class="body"><span class="cat">${esc(catName(p.cat))}</span><h2 class="name">${esc(p.name)}</h2>${p.thickness?`<span class="meta">السُمك المقترح: ${esc(p.thickness)}</span>`:''}<p class="desc">${esc(p.desc||'اكتب المقاس اللي يناسبك ونساعدك في الاختيار.')}</p><button class="details" data-index="${i}">شوف التفاصيل والمقاس <span>←</span></button></div></article>`).join('')}
-function openModal(i){const p=CATALOG.products[i];state.product={p,i};document.querySelector('#modalKicker').textContent=catName(p.cat);document.querySelector('#modalTitle').textContent=p.name;document.querySelector('#modalDesc').textContent=p.desc||'اختار المقاس المناسب أو اكتب مقاسك بنفسك.';const presets=document.querySelector('#presets');presets.innerHTML=(p.sizes||[]).map(s=>`<button class="preset" data-size="${esc(s)}">${esc(s)}</button>`).join('')||'<span class="unit">مفيش مقاسات جاهزة — اكتب المقاس يدويًا</span>';['length','width','height'].forEach(id=>document.getElementById(id).value='');document.querySelector('#validation').textContent='';document.querySelector('#backdrop').classList.add('open');document.querySelector('#backdrop').setAttribute('aria-hidden','false');document.querySelector('#length').focus()}
-function closeModal(){document.querySelector('#backdrop').classList.remove('open');document.querySelector('#backdrop').setAttribute('aria-hidden','true')}
-function setDimensions(size){const nums=String(size).replace(/[^0-9×xX*]+/g,'').split(/[×xX*]/).map(Number);if(nums.length>=2){document.querySelector('#width').value=nums[0];document.querySelector('#length').value=nums[1]}}
-function sendOrder(){const p=state.product?.p;if(!p)return;const l=document.querySelector('#length').value,w=document.querySelector('#width').value,h=document.querySelector('#height').value;const v=document.querySelector('#validation');if(!l||!w||!h){v.textContent='اكتب الطول والعرض والارتفاع عشان نجهز الطلب بدقة.';return}const msg=`أهلاً، عايز أستفسر عن: ${p.name} — المقاس المطلوب: ${l} طول × ${w} عرض × ${h} ارتفاع سم`;window.open(`https://wa.me/${CATALOG.whatsapp}?text=${encodeURIComponent(msg)}`,'_blank','noopener')}
-tabs.addEventListener('click',e=>{const b=e.target.closest('.tab');if(!b)return;state.cat=b.dataset.cat;renderTabs();renderGrid()});document.querySelector('#q').addEventListener('input',e=>{state.q=e.target.value;renderGrid()});grid.addEventListener('click',e=>{const b=e.target.closest('.details');if(b)openModal(Number(b.dataset.index))});document.querySelector('#close').addEventListener('click',closeModal);document.querySelector('#backdrop').addEventListener('click',e=>{if(e.target.id==='backdrop')closeModal()});document.addEventListener('keydown',e=>{if(e.key==='Escape')closeModal()});document.querySelector('#presets').addEventListener('click',e=>{const b=e.target.closest('.preset');if(!b)return;document.querySelectorAll('.preset').forEach(x=>x.classList.remove('active'));b.classList.add('active');setDimensions(b.dataset.size)});document.querySelector('#order').addEventListener('click',sendOrder);renderTabs();renderGrid();
+const WA_ICON = `<svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#04230f" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52s.198-.298.298-.497c.099-.198.05-.371-.025-.52s-.669-1.612-.916-2.207c-.242-.579-.487-.5-.669-.51a13 13 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074s2.096 3.2 5.077 4.487c.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413s.248-1.289.173-1.413c-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.82 9.82 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.82 11.82 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.9 11.9 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.82 11.82 0 0 0-3.48-8.413"/></svg>`;
+
+const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const catName = id => (CATALOG.categories.find(c => c.id === id) || {}).name || "";
+
+const state = { cat: "all", q: "", pick: {} };   // pick = المقاس المختار لكل منتج
+const grid = document.getElementById("grid");
+const tabs = document.getElementById("tabs");
+
+function waLink(p, i) {
+  const size = state.pick[i];
+  let msg = `أهلاً، عايز أستفسر عن: ${p.name}`;
+  if (size) msg += ` — مقاس ${size}`;
+  return `https://wa.me/${CATALOG.whatsapp}?text=${encodeURIComponent(msg)}`;
+}
+
+function renderTabs() {
+  const used = CATALOG.categories.filter(c => CATALOG.products.some(p => p.cat === c.id));
+  const all = [{ id: "all", name: "الكل" }, ...used];
+  tabs.innerHTML = all.map(c =>
+    `<button class="tab" data-cat="${esc(c.id)}" aria-pressed="${state.cat === c.id}">${esc(c.name)}</button>`).join("");
+}
+
+function renderGrid() {
+  const q = state.q.trim().toLowerCase();
+  const list = CATALOG.products
+    .map((p, i) => ({ p, i }))
+    .filter(({ p }) => (state.cat === "all" || p.cat === state.cat) &&
+      (!q || (p.name + " " + (p.desc || "")).toLowerCase().includes(q)));
+
+  if (!list.length) { grid.innerHTML = `<p class="empty">مفيش منتجات مطابقة</p>`; return; }
+
+  grid.innerHTML = list.map(({ p, i }) => `
+    <article class="card">
+      <div class="pic">
+        <img class="ph" src="../logo.png" alt="">
+        ${p.image ? `<img class="photo" src="${esc(p.image)}" alt="${esc(p.name)}" loading="lazy" onerror="this.remove()">` : ""}
+      </div>
+      <div class="body">
+        <span class="cat">${esc(catName(p.cat))}</span>
+        <h2 class="name">${esc(p.name)}</h2>
+        ${p.thickness ? `<span class="meta">السُمك: ${esc(p.thickness)}</span>` : ""}
+        ${p.desc ? `<p class="desc">${esc(p.desc)}</p>` : ""}
+        ${(p.sizes || []).length ? `<div class="sizes" data-i="${i}">${p.sizes.map(s =>
+          `<button class="size" data-size="${esc(s)}" aria-pressed="${state.pick[i] === s}">${esc(s)}</button>`).join("")}</div>` : ""}
+        ${p.price ? `<span class="price">${esc(p.price)}</span>` : ""}
+        <a class="order" data-i="${i}" href="${waLink(p, i)}" target="_blank" rel="noopener">${WA_ICON}اطلب واتساب</a>
+      </div>
+    </article>`).join("");
+}
+
+tabs.addEventListener("click", e => {
+  const b = e.target.closest(".tab"); if (!b) return;
+  state.cat = b.dataset.cat; renderTabs(); renderGrid();
+});
+document.getElementById("q").addEventListener("input", e => { state.q = e.target.value; renderGrid(); });
+
+grid.addEventListener("click", e => {
+  const b = e.target.closest(".size"); if (!b) return;
+  const i = b.parentElement.dataset.i;
+  state.pick[i] = state.pick[i] === b.dataset.size ? "" : b.dataset.size;   // ضغطة تانية تلغي الاختيار
+  b.parentElement.querySelectorAll(".size").forEach(x => x.setAttribute("aria-pressed", x.dataset.size === state.pick[i]));
+  b.closest(".card").querySelector(".order").href = waLink(CATALOG.products[i], i);
+});
+
+renderTabs(); renderGrid();
 </script>
 </body>
 </html>
